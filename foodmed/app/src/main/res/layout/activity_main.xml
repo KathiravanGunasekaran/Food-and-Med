@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="10dp">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal"
+         android:background="@drawable/layout">
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:layout_width="150dp"
+             app:civ_border_color="@color/red"
+             app:civ_border_width="2dp"
+             android:layout_height="150dp"
+             android:layout_marginLeft="53dp"
+             android:layout_marginTop="20dp"
+             android:src="@drawable/ml" />
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             android:src="@drawable/zs"
+             android:layout_marginTop="20dp"
+             app:civ_border_color="@color/red"
+             app:civ_border_width="2dp"
+             android:layout_marginLeft="20dp"/>
+     </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="10dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/foodbutton"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="125dp"
+            android:textColor="@color/red"
+            android:text="Swiggy"
+            android:background="@drawable/button"/>
+
+
+        <Button
+            android:id="@+id/medbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button"
+            android:textColor="@color/red"
+            android:text="Med-life" />
+        <Button
+            android:id="@+id/foodsbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button"
+            android:textColor="@color/red"
+            android:text="Zomato" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
